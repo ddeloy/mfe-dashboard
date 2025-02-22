@@ -3,10 +3,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
 
 module.exports = {
-    mode: "development",
+    mode: "production", // ✅ Ensure it's optimized for production deployment
     entry: "./src/index.tsx",
     devServer: {
-        port: 3001,  // Ensure dashboard is on a different port
+        port: 3001,
         historyApiFallback: true,
         static: path.resolve(__dirname, "public"),
         hot: true,
@@ -25,10 +25,10 @@ module.exports = {
             name: "dashboard",
             filename: "remoteEntry.js",
             remotes: {
-                analyticsApp: "analyticsApp@http://localhost:3002/remoteEntry.js", // ✅ Always use LOCAL instance first
+                analyticsApp: "analyticsApp@https://mfe-dashboard-67hn.vercel.app/remoteEntry.js", // ✅ Use deployed Vercel instance
             },
             exposes: {
-                "./GlobalContext": "./src/state/GlobalContext.tsx", // ✅ Ensure correct file extension
+                "./GlobalContext": "./src/state/GlobalContext.tsx",
             },
             shared: {
                 react: { singleton: true, requiredVersion: "18.3.1", eager: true },
