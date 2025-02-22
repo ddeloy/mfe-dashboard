@@ -32,8 +32,12 @@ const Analytics = () => {
     if (error) return <p>Error: {error}</p>;
 
     return (
-        <div>
+        <div style={{padding: "20px", maxWidth: "800px", margin: "0"}}>
             <h2>Analytics Dashboard</h2>
+            <p>
+                The 'Dummy' Analytics Dashboard: API Integration – Fetching data from a sample API and
+                shares state with the 'Dummy' Dashboard.
+            </p>
             <p>Welcome, {user}!</p> {/* ✅ Shared state */}
             <p>Current Theme: {theme}</p> {/* ✅ Shared state */}
 

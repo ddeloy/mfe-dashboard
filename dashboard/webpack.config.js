@@ -25,7 +25,9 @@ module.exports = {
             name: "dashboard",
             filename: "remoteEntry.js",
             remotes: {
-                analyticsApp: "analyticsApp@https://mfe-dashboard-67hn.vercel.app/remoteEntry.js", // ✅ Use deployed Vercel instance
+              //  analyticsApp: "analyticsApp@http://localhost:3002/remoteEntry.js", // local dev
+              analyticsApp: "analyticsApp@https://mfe-dashboard-67hn.vercel.app/remoteEntry.js", // ✅ Use deployed Vercel instance
+
             },
             exposes: {
                 "./GlobalContext": "./src/state/GlobalContext.tsx",
