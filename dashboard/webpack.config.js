@@ -23,14 +23,19 @@ module.exports = {
     plugins: [
         new ModuleFederationPlugin({
             name: "dashboard",
+            filename: "remoteEntry.js",
             remotes: {
                 analyticsApp: "analyticsApp@http://localhost:3002/remoteEntry.js",
             },
+            exposes: {
+                "./GlobalContext": "./src/state/GlobalContext.tsx", // ✅ Ensure correct file extension
+            },
             shared: {
-                react: { singleton: true, requiredVersion: "18.3.1", eager: true, strictVersion: false },
-                "react-dom": { singleton: true, requiredVersion: "18.3.1", eager: true, strictVersion: false },
+                react: { singleton: true, requiredVersion: "18.3.1", eager: true },
+                "react-dom": { singleton: true, requiredVersion: "18.3.1", eager: true },
             },
         }),
+
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "public/index.html"),
         }),

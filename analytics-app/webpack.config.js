@@ -27,6 +27,9 @@ module.exports = {
             exposes: {
                 "./Analytics": "./src/Analytics.tsx",
             },
+            remotes: {
+                dashboard: "dashboard@http://localhost:3001/remoteEntry.js", // ✅ Add this to import GlobalContext
+            },
             shared: {
                 react: { singleton: true, requiredVersion: "18.3.1", eager: true, strictVersion: false },
                 "react-dom": { singleton: true, requiredVersion: "18.3.1", eager: true, strictVersion: false },
