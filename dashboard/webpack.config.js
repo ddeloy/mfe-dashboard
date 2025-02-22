@@ -25,7 +25,10 @@ module.exports = {
             name: "dashboard",
             filename: "remoteEntry.js",
             remotes: {
-                analyticsApp: "analyticsApp@http://localhost:3002/remoteEntry.js",
+                // ✅ Use the local version when developing locally
+                analyticsApp: process.env.NODE_ENV === "development"
+                    ? "analyticsApp@http://localhost:3002/remoteEntry.js"
+                    : "analyticsApp@https://mfe-dashboard-67hn.vercel.app/remoteEntry.js", // ✅ Use the deployed version in production
             },
             exposes: {
                 "./GlobalContext": "./src/state/GlobalContext.tsx", // ✅ Ensure correct file extension
