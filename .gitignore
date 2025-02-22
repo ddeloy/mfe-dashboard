@@ -1,0 +1,38 @@
+# Node.js Dependencies
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Build & Generated Files
+dist/
+public/remoteEntry.js
+public/*.map
+*.log
+*.cache/
+*.tsbuildinfo
+
+# 🏗 Webpack & Vite
+.vite/
+.vitepress/
+.cache/
+.next/
+out/
+.webpack/
+.storybook-out/
+
+# TypeScript
+
+
+# 🔥 IDE & OS-specific Files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Git & Environment Files
+.env
+.env.local
+.env.development
+.env.production
+.npmrc
