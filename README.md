@@ -41,9 +41,9 @@ The project is deployed on **Vercel**.
 ## 🛠️ Enhancements & Roadmap
 
 ### ✔️ Basic Functionality:
-✅ **Host Dashboard** loads the remote **Analytics App** dynamically.  
-✅ Fetches and displays sample **API data**.
-✅ **Pivot Trading Dashboard** **supports stock symbol input, rolling pivot calculations**, and **real-time analysis**.
+- **Host Dashboard** loads the remote **Analytics App** dynamically.  
+- Fetches and displays sample **API data**.
+- **Pivot Trading Dashboard** **supports stock symbol input, rolling pivot calculations**, and **real-time analysis**.
 
 ### 🔜 Next Steps:
 - **Improve UI/UX** (Styling, Layout, Themes).  
