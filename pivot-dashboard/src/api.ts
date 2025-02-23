@@ -1,4 +1,4 @@
-const API_KEY = process.env.VITE_API_KEY || process.env.API_KEY || "YOUR_FALLBACK_API_KEY_HERE";
+const API_KEY = "ITYDRGE14LK6JC5O";
 
 console.log("🚀 API Key in Vercel:", API_KEY); // Debug API Key
 
