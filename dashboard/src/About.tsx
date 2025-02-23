@@ -6,7 +6,7 @@ const About = () => {
             <h2>About This Project</h2>
             <p>
                 This project demonstrates a simple Micro-Frontend (MFE) architecture using Webpack Module Federation.
-                The main application (Dummy Dashboard) dynamically loads a remote application (Dummy Analytics App) at runtime.
+                The main application ('Dummy' Dashboard / Host App) dynamically loads a remote application ('Dummy' Analytics App) at runtime.
             </p>
 
             <h2>Key Features:</h2>

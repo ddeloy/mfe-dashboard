@@ -10,7 +10,7 @@ const Dashboard = () => {
             <h2>Main Dashboard</h2>
             <p>
                 This project demonstrates a simple Micro-Frontend (MFE) architecture using Webpack Module Federation.
-                The 'Dummy' Main Dashboard is the entry point and dynamically loads a remote application ('Dummy' Analytics App") at
+                The 'Dummy' Main Dashboard is the Host App and dynamically loads a remote application ('Dummy' Analytics App) at
                 runtime.
             </p>
             <p>Welcome, {user}!</p>
