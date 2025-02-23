@@ -1,4 +1,6 @@
-const API_KEY = "ITYDRGE14LK6JC5O";
+const API_KEY = process.env.VITE_API_KEY || process.env.API_KEY || "MISSING_KEY";
+console.log("🚀 Vercel API Key:", API_KEY); // Debug API Key in Vercel
+
 
 console.log("🚀 API Key in Vercel:", API_KEY); // Debug API Key
 

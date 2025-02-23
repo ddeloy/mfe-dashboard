@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
-const Dotenv = require("dotenv-webpack");  // ✅ Import dotenv-webpack
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
     mode: "development",
@@ -32,7 +32,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "public/index.html"),
         }),
-        new Dotenv(),  // ✅ Load .env variables (only needed locally)
+        new Dotenv(),  // ✅ Load .env variables only for local development
     ],
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
