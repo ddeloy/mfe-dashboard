@@ -1,4 +1,6 @@
-const API_KEY = process.env.VITE_API_KEY || "YOUR_FALLBACK_API_KEY_HERE";  // ✅ Uses environment variable if available
+const API_KEY = process.env.VITE_API_KEY || process.env.API_KEY || "YOUR_FALLBACK_API_KEY_HERE";
+
+console.log("🚀 API Key in Vercel:", API_KEY); // Debug API Key
 
 // Define the DailyData type
 export type DailyData = {
