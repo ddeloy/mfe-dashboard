@@ -7,7 +7,7 @@ export function PivotDashboard(): HTMLElement {
    <h2>Pivot Trading Dashboard</h2>
    <p>
     This micro-service is a streamlined standalone version of a key component from my  
-    trading application. To explore my latest mvp version, visit  
+    trading application. To explore further, visit  
     <a href="https://ddeloy.com/d-trade" target="_blank">d-trade</a>.
     </p>
 
