@@ -34,7 +34,7 @@ The **Pivot Trading Dashboard**, while separate, demonstrates how an existing fe
 The project is deployed on **Vercel**.
 
 - **Dashboard (Host App)** → [🔗 Vercel Deployment](https://mfe-dashboard-murex.vercel.app/)
-- **Pivot Trading Dashboard (Standalone App)** → [🔗 Vercel Deployment](https://mfe-dashboard-murex.vercel.app/)
+- **Pivot Trading Dashboard (Standalone App)** → [🔗 Vercel Deployment](https://mfe-dashboard-5puy.vercel.app/)
 
 ---
 
