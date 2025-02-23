@@ -46,12 +46,12 @@ The project is deployed on **Vercel**.
 ✅ **Pivot Trading Dashboard** **supports stock symbol input, rolling pivot calculations**, and **real-time analysis**.
 
 ### 🔜 Next Steps:
-🔹 **Improve UI/UX** (Styling, Layout, Themes).  
-🔹 **Add Authentication & Role-Based Access**.  
-🔹 **Expand API integrations** with more real-world data.
-🔹 **Enhance Pivot Dashboard with visualization tools (Charts, Trend Indicators).**
-🔹 **Add more diverse micro-frontends**.
-🔹 **Integrate Pivot Dashboard as a Micro-Frontend into the existing system.**
+- **Improve UI/UX** (Styling, Layout, Themes).  
+- **Add Authentication & Role-Based Access**.  
+- **Expand API integrations** with relevant real-world data. 
+- **Add more diverse micro-frontends**.
+- **Enhance Pivot Dashboard** with visualization tools (**Charts, Trend Indicators**).
+- **Integrate Pivot Dashboard** as a Micro-Frontend into the existing system.
 
 ---
 
