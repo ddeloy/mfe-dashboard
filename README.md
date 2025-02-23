@@ -15,6 +15,7 @@ This project consists of **three micro-frontends**:
 
 The Dashboard app communicates via **Webpack Module Federation**, dynamically loading the **Analytics App** inside the **Dashboard** without requiring a full-page reload.
 The **Pivot Trading Dashboard**, while separate, demonstrates how an existing feature from a larger app can be isolated into a micro-service.
+
 ---
 
 ## 🎯 Features
