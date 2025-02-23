@@ -1,8 +1,5 @@
 const API_KEY = "ITYDRGE14LK6JC5O";
-console.log("🚀 Vercel API Key:", API_KEY); // Debug API Key in Vercel
-
-
-console.log("🚀 API Key in Vercel:", API_KEY); // Debug API Key
+console.log("Vercel API Key:", API_KEY); // Debug API Key in Vercel
 
 // Define the DailyData type
 export type DailyData = {
